@@ -21,6 +21,56 @@
             <a href="join.html">Join</a>
         </nav>
     </header>
+    <main>
+        <h1>Join the club</h1>
+        <form action="submit_form.php" method="post">
+            <label for="fname">Full name:</label>
+            <br>
+            <input type="text" id="fname" name="fname"
+            placeholder="Ava Stone" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"
+            placeholder="ava@example.com" required><br>
+            <p class="hint">
+                Enter a valid email address,
+                for example ava@example.com
+            </p>
+            <br><br>
+
+            <label for="level">Experience</label><br>
+            <select id="level" name="level">
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+                <option value="expert">Expert</option>
+            </select><br><br>
+
+            <label for="photo">Profile photo</label><br>
+            <input type="file" id="photo" name="photo" 
+            accept="image/*"><br><br>
+            <label for="text">Why do you want to join?</label><br>
+            <textarea id="text" name="text" rows="6" cols="50"
+            placeholder="I love ridge walks." required></textarea>
+            <br><br>
+            <fieldset>
+                <legend>How did you hear about us?</legend>
+                <input type="radio" id="friend" name="friend" 
+                value="friend" selected>
+                <label for="friend">Friend</label>
+                <input type="radio" id="search" name="search" 
+                value="search">
+                <label for="search">Search</label>
+                <input type="radio" id="poster" name="poster" 
+                value="poster">
+                <label for="poster">Poster</label>
+            </fieldset>
+        </form>
+        <h4>Form completeness (3 of 5)</h4>
+        <progress value="3" max="5"></progress>
+        <br><br>
+        <button type="submit">Send Application</button>
+    </main>
     <footer>
         <p>&copy; 2026 Trailhead Hiking Club 
             &#183; Built with HTML & CSS     
