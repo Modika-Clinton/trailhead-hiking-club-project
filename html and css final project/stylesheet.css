@@ -279,7 +279,68 @@ address a {
     color: var(--bg-color);
 }
 /* General Styling for compare */
-
+table, th, td {
+    border-collapse: collapse;
+    width: 800px;
+    text-align: start;
+}
+thead {
+    background-color: var(--bg-color);
+}
+.row-2 th:nth-child(3) {
+    border-top: 1.5px solid var(--secondary-color);
+    border-left: 1px solid var(--secondary-color);
+}
+.row-2 th:nth-child(2) {
+    border-top: 1.5px solid var(--secondary-color);
+}
+th, td {
+    padding: 10px;
+}
+tbody tr:nth-child(odd) {
+    background-color: var(--color-surface);
+}
+tfoot {
+    background-color: var(--color-surface);
+}
+.membership {
+    display: flex;
+    gap: 20px;
+}
+.day {
+    border: 1px solid var(--secondary-color);
+    background: var(--color-surface);
+    width: 230px;
+    height: 270px;
+    border-radius: 15px;
+    padding: 10px;
+    transition: 0.4s;
+}
+.day .price {
+    font-weight: bolder;
+    font-size: 20px;
+    color: var(--bg-color);
+}
+.day .recommend {
+    background: var(--bg-color);
+    color: var(--color-surface);
+    border-radius: 20px;
+    font-size: 10px;
+    padding: 5px;
+}
+.day ul li {
+    margin-left: -20px;
+}
+.day button {
+    background: var(--color-surface-variant);
+    color: var(--color-surface);
+    border-radius: 20px;
+    padding: 5px;
+}
+.member:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
 /* General styling for gallery */
 .gallery {
     display: flex;
@@ -316,25 +377,3 @@ address a {
     border-radius: 8px;
 }
 /* General styling for compare */
-table, th, td {
-    border-collapse: collapse;
-}
-thead {
-    background-color: #247354;
-}
-th:nth-child(3) {
-    border-top: 1.5px solid var(--secondary-color);
-    border-left: 1px solid var(--secondary-color);
-}
-th:nth-child(2) {
-    border-top: 1.5px solid var(--secondary-color);
-}
-th, td {
-    padding: 10px;
-}
-tbody tr:nth-child(odd) {
-    background-color: var(--color-surface);
-}
-tfoot {
-    background-color: var(--color-surface);
-}
