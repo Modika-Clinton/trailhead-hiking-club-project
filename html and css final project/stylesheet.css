@@ -315,3 +315,26 @@ address a {
     height: 170px;
     border-radius: 8px;
 }
+/* General styling for compare */
+table, th, td {
+    border-collapse: collapse;
+}
+thead {
+    background-color: #247354;
+}
+th:nth-child(3) {
+    border-top: 1.5px solid var(--secondary-color);
+    border-left: 1px solid var(--secondary-color);
+}
+th:nth-child(2) {
+    border-top: 1.5px solid var(--secondary-color);
+}
+th, td {
+    padding: 10px;
+}
+tbody tr:nth-child(odd) {
+    background-color: var(--color-surface);
+}
+tfoot {
+    background-color: var(--color-surface);
+}
