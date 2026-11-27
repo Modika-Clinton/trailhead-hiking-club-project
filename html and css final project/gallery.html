@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="HTM and CSS Final Project - Gallery">
     <meta name="author" content="Modika Clinton">
-    <link rel="icon" type="image/x-icon" href="C:\Users\USER\assets\professional_profile_photo.jpg">
+    <link rel="icon" type="image/x-icon" href="media folder/professional_profile_photo.jpg">
+    <link rel="stylesheet" href="stylesheet.css">
     <title>HTML and CSS Fianl Project - Gallery</title>
 </head>
 <body>
     <header>
         <div class="trail">
-            &#8710; Trailhead
+           &#9650; Trailhead
         </div>
         <nav>
             <a href="home.html">Home</a>
@@ -24,34 +25,58 @@
     <main>
         <h1>Gallery</h1>
         <div class="gallery">
-            <div class="set-1"><img src="media folder\australia.jpg" class="australia"
-                alt="Hiking forest in Australia">
-                <img src="media folder\queensland.jpg" class="queensland"
-                alt="Hiking in Queensland, Australia">
-                <img src="media folder\holly.jpg" class="holly"
-                alt="A hiker on a trail in queensland, Australia">
-             </div>
-             <div class="set-2">
-                <img src="media folder\sebastien.jpg" class="sebastien"
-                alt="A hiker on a mountain trail">
-                <img src="media folder\justin-buisson.jpg" class="justin-buisson"
-                alt="Family hikers on a trail in the forest">
-                <img src="media folder\dmitrii.jpg" class="dmitrii"
-                alt="A hiker on a trail on a mountainous terrain">
-             </div>
+            <div class="property-1">
+                <div>
+                    <img src="media folder\australia.jpg" class="big-img"
+                    alt="Hiking forest in Australia" loading="lazy">
+                </div>
+                <div class="property-2">
+                    <div>
+                        <img src="media folder\queensland.jpg" class="small-img"
+                        alt="Hiking in Queensland, Australia" loading="lazy">
+                    </div>
+                    <div>
+                        <img src="media folder\holly.jpg" class="small-img"
+                        alt="A hiker on a trail in queensland, Australia" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="property-1">
+                <div class="property-2">
+                    <div>
+                        <img src="media folder\sebastien.jpg" class="small-img"
+                        alt="A hiker on a mountain trail" loading="lazy">
+                    </div>
+                    <div>
+                        <img src="media folder\justin-buisson.jpg" class="small-img"
+                        alt="Family hikers on a trail in the forest" loading="lazy">
+                    </div>
+                </div>
+                <div>
+                    <img src="media folder\dmitrii.jpg" class="big-img"
+                    alt="A hiker on a trail on a mountainous terrain" loading="lazy">
+                </div>
+            </div>
         </div>
-        <div class="set-3">
-            <iframe width="560" height="315" 
-            src="media folder\hiking-vid.mp4" 
-            title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; 
-            encrypted-media; gyroscope; picture-in-picture; 
-            web-share" allowfullscreen></iframe>
-            <audio  controls>
-                <source src="media folder\whatsapp-audio.m4a" 
-                type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+        <div class="property-3">
+            <div>
+                <iframe width="500" height="300" 
+                    src="media folder\hiking-vid.mp4" 
+                    frameborder="0" allow="accelerometer; 
+                    autoplay; clipboard-write; 
+                    encrypted-media; gyroscope; picture-in-picture; 
+                    web-share" allowfullscreen>
+                </iframe>
+            </div>
+            <div class="property-4">
+                <h5>Audio: Trail sounds</h5>
+                <audio  controls>
+                    <source src="media folder\whatsapp-audio.m4a" 
+                    type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>Birdsong from Birch Wood, 0:59</p>
+            </div>
         </div>
     </main>
     <footer>

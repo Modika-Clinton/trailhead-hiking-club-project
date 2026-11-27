@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="HTM and CSS Final Project - Guide">
     <meta name="author" content="Modika Clinton">
-    <link rel="icon" type="image/x-icon" href="C:\Users\USER\assets\professional_profile_photo.jpg">
+    <link rel="icon" type="image/x-icon" href="media folder/professional_profile_photo.jpg">
+    <link rel="stylesheet" href="stylesheet.css">
     <title>HTML and CSS Fianl Project - Guide</title>
 </head>
 <body>
     <header>
         <div class="trail">
-            &#8710; Trailhead
+            &#9650; Trailhead
         </div>
         <nav>
             <a href="home.html">Home</a>
@@ -23,12 +24,12 @@
     </header> 
     <main>
         <h1>Falcon Ridge Trail Guide</h1>
-        <section>
+        <section class="guide-1">
             <div>
                 <p>
                     A <b>12 km</b> circular route with 
-                    GPS-friendly waypoints. Total 
-                    evolution gain is <del>500 m</del>
+                    <abbr title="Global Positionin System">GPS</abbr>-friendly waypoints. Total 
+                    evolution gain is <del>500 m</del><br>
                     <ins>640 m</ins> after the 2026
                     resurvey. Allow 5&frac12; hours, and carry
                     2 L of H<sub>2</sub>O.
@@ -38,48 +39,58 @@
                     section is not suitable in high wind.
                 </p>
             </div>
-            <div>
+            <div class="quote">
                 <q>
-                    "Start early: the ridge is
-                    after noon"
+                    Start early: the ridge is
+                     exposed after<br> noon.
                 </q>
             </div>
         </section>
         <section>
             <h3>Route stages</h3>
             <ol type="1">
-                <li>Car park tobirch Wood</li>
+                <li>Car park to Birch Wood</li>
                 <li>Birch Wood to the saddle</li>
                 <li>Saddle to summit cairn &rarr; lunch</li>
-                Descent via the old quarry
+                <li>Descent via the old quarry</li>
             </ol>
             <h3>Gear</h3>
-            <dl>
-                <dt>All year</dt>
-                <dd>Boots</dd>
-                <dd>Rain jackets</dd>
-                <dt>Winter</dt>
-                <dd>Microspikes</dd>
-                <dd>Head torch</dd>
-            </dl>
+            <ul>
+                <li>All year</li>
+                <ul>
+                    <li>Boots</li>
+                    <li>Rain jackets</li>
+                </ul>
+                <li>Winter</li>
+                <ul>
+                    <li>Microspikes</li>
+                    <li>Head torch</li>
+                </ul>
+            </ul>
         </section>
-        <div>
-            <span>PACK CHECKLIST</span><br>
+        <div class="code">
+            <p>PACK CHECKLIST</p>
             <code>
-                [x] water [x] map [] spare socks
+                [x] water [x] map [ ] spare socks
             </code>
         </div>
         <section>
-            <h3>Grossary</h3>
-            <div>
-                <h4>Cairn</h4>
-                <p>a stack of stones making the route.</p>
-                <h4>Saddle</h4>
-                <p>Low point between two packs.</p>
-                <h4>Scree</h4>
-                <p>Loose stories on a slope.</p>
-                <h4>Waypoint</h4>
-                <p>A named point on the route.</p>
+            <h3>Glossary</h3>
+            <div class="glossary">
+                <p>
+                    <b>Cairn</b><br>
+                    a stack of stones making the route.<br><br>
+                    <b>Saddle</b><br>
+                    Low point between two packs.
+                </p>
+
+                <p>
+                    <b>Scree</b><br>
+                    Loose stories on a slope. <br><br>
+                    <b>Waypoint</b><br>
+                    A named point on the route.
+                </p>
+
             </div>
         </section>
         <section>
@@ -87,21 +98,21 @@
             <div class="changelog">
                 <div class="row">
                     <div class="dot"></div>
-                    <div class="parag">
+                    <div class="paragraph">
                         20 Nov 2026 <br>
                         Corrected elevation gain.
                     </div>
                 </div>
                 <div class="row"> 
                     <div class="dot"></div>
-                    <div class="parag">
+                    <div class="paragraph">
                         2 Sep 2026 <br>
                         Added writing gear.
                     </div>  
                 </div>
                 <div class="row">
                     <div class="dot"></div>
-                    <div class="parag">
+                    <div class="paragraph">
                         11 Apr 2026 <br>
                         First published.
                     </div>
@@ -109,7 +120,7 @@
             </div>
             <address>
               Written by Jonas Weber &#183; 
-              guides@trailhead.example
+              <a href="#">guides@trailhead.example</a>
             </address>
         </section>
     </main>

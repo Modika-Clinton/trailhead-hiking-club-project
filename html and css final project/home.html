@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="HTM and CSS Final Project - Home">
     <meta name="author" content="Modika Clinton">
-    <link rel="icon" type="image/x-icon" href="C:\Users\USER\assets\professional_profile_photo.jpg">
+    <link rel="icon" type="image/x-icon" href="media folder/professional_profile_photo.jpg">
+    <link rel="stylesheet" href="stylesheet.css">
     <title>HTML and CSS Fianl Project - Home</title>
 </head>
 <body>
     <header>
         <div class="trail">
-            &#8710; Trailhead
+        &#9650; Trailhead 
         </div>
         <nav>
             <a href="home.html">Home</a>
@@ -23,59 +24,65 @@
     </header>
     <main>
         <section class="hero">
-            <span class="season">
-                AUTUMN SEASON OPEN
-            </span>
-            <h1>Walk further. Together.</h1>
-            <p>
-                Guided hikes, honest trail notes 
-                and a club that waits at the top.
-            </p>
-            <button>join the next hike</button>
+            <div class="sun"></div>
+            <div class="hero-content">
+                <span class="season">
+                    AUTUMN SEASON OPEN
+                </span>
+                <h1>Walk further. Together.</h1>
+                <p>
+                    Guided hikes, honest trail notes 
+                    and a club that waits at the top.
+                </p>
+                <button>join the next hike</button>
+            </div>
         </section>
-        <section class="hike-cards">
+        <section>
             <h2>Next hikes</h2>
-            <div>
-                <span class="level">EASY</span>
-                <h3>Lakeside Loop</h3>
-                <p>
-                    6 km &#183; 120 m gain
-                </p>
-                <ul>
-                    <li>sat 5 Dec</li>
-                    <li>Families welcome</li>
-                </ul>
-                <br><br>
-                <p>
-                    <a href="home.html">Read the trail guide</a>
-                </p>
-            </div>
-            <div>
-                <span class="level">MODERATE</span>
-                <h3>Falcon Ridge</h3>
-                <p>
-                    12 km &#183; 640 m gain
-                </p>
-                <ul>
-                    <li>Sat 12 Dec</li>
-                    <li>Packed lunch</li>
-                    <li>Poles advised</li>
-                </ul>
-                <p>
-                    <a href="home.html">Read the trail guide</a>
-                </p>
-            </div>
-            <div>
-                <span class="level">HARD</span>
-                <h3>Summit Traverse</h3>
-                <p>
+            <div class="hike-cards">
+                <div class="card">
+                    <span class="level">EASY</span>
+                    <h3>Lakeside Loop</h3>
+                    <p>
+                        6 km &#183; 120 m gain
+                    </p>
+                    <ul>
+                        <li>sat 5 Dec</li>
+                        <li>Families welcome</li>
+                    </ul>
+                    <br><br>
+                    <p>
+                        <a href="#">Read the trail guide</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <span class="level">MODERATE</span>
+                    <h3>Falcon Ridge</h3>
+                    <p>
+                        12 km &#183; 640 m gain
+                    </p>
+                    <ul>
+                        <li>Sat 12 Dec</li>
+                        <li>Packed lunch</li>
+                        <li>Poles advised</li>
+                    </ul>
+                    <br>
+                    <p>
+                        <a href="#">Read the trail guide</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <span class="level">HARD</span>
+                    <h3>Summit Traverse</h3>
+                    <p>
                     18 km &#183; 1,150 m gain
                 </p>
                 <ul>
                     <li>Sat 19 Dec</li>
                 </ul>
+                <br><br><br>
                 <p>
-                    <a href="home.html">Read the trail guide</a>
+                    <a href="#">Read the trail guide</a>
                 </p>
             </div>
             <aside>
@@ -85,52 +92,75 @@
                     added to every guide.
                 </p>
                 <p>
-                    <span class="remind">Reminder:</span> 
+                    <mark>Reminder:</mark> 
                     head torches mandatory after 15:00.
                 </p>
                 <p>
                     Questions?
-                    <a href="#contact">Conatct the committee</a>
+                    <a href="#">Contact the committee.</a>
                 </p>
             </aside>
         </section>
         <section class="testimonial-cards">
-            <div>
+            <div class="testimonial-card">
                 <span class="slash">&#47; &#47;</span>
                 <p>
                     Best Saturdays of my year. Nobody
                     gets left behind.
                 </p>
                 <p>
-                    <span class="testimonial">&#10061;</span>
+                    <svg width="30" height="30" viewBox="0 0 24 24">
+                        <defs>
+                            <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="darkgreen" />
+                                <stop offset="100%" stop-color="orange" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="12" cy="12" r="10" fill="url(#grad)" />
+                    </svg>
                     Mara, member since 2022
                 </p>
             </div>
-            <div>
+            <div class="testimonial-card">
                 <span class="slash">&#47; &#47;</span>
                 <p>
                     The trail notes are better than 
                     any app I have tried.
                 </p>
                 <p>
-                    <span class="testimonial">&#10061;</span>
+                    <svg width="30" height="30" viewBox="0 0 24 24">
+                        <defs>
+                            <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="darkgreen" />
+                                <stop offset="100%" stop-color="orange" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="12" cy="12" r="10" fill="url(#grad)" />
+                    </svg>
                     Jonas, ridge leader
                 </p>
             </div>
-            <div>
+            <div class="testimonial-card">
                 <span class="slash">&#47; &#47;</span>
                 <p>
                     Joined as a beginner, led my 
                     first hike this spring.
                 </p>
                 <p>
-                    <span class="testimonial">&#10061;</span>
+                    <svg width="30" height="30" viewBox="0 0 24 24">
+                        <defs>
+                            <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="darkgreen" />
+                                <stop offset="100%" stop-color="orange" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="12" cy="12" r="10" fill="url(#grad)" />
+                    </svg>
                     Proya, member
                 </p>
             </div>
         </section>
     </main>
-    <hr>
     <footer>
         <p>&copy; 2026 Trailhead Hiking Club 
             &#183; Built with HTML & CSS     
