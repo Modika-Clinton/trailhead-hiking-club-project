@@ -376,4 +376,43 @@ tfoot {
     height: 170px;
     border-radius: 8px;
 }
-/* General styling for compare */
+/* General styling for join */
+label {
+    font-weight: bold;
+}
+#fname, #email, #level {
+    width: 56%;
+    padding: 8px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+#photo {
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    background: var(--color-surface);
+    width: 56%;
+    padding: 5px;
+}
+.hint {
+    color: var(--color-surface-variant);
+    font-size: 11px;
+}
+#text {
+    border-radius: 8px;
+    padding: 5px;
+}
+fieldset {
+    width: 55%;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+}
+progress {
+    width: 58%;
+}
+.submit {
+    border: 1px solid var(--secondary-color);
+    border-radius: 20px;
+    padding: 6px;
+    background: var(--color-surface-variant);
+    color: var(--color-surface);
+}

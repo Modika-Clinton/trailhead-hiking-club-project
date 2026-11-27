@@ -23,7 +23,7 @@
         </nav>
     </header>
     <main>
-        <h1>Join the club</h1>
+        <h2>Join the club</h2>
         <form action="submit_form.php" method="post">
             <label for="fname">Full name:</label>
             <br>
@@ -33,10 +33,10 @@
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="email"
             placeholder="ava@example.com" required><br>
-            <p class="hint">
+            <span class="hint">
                 Enter a valid email address,
-                for example ava@example.com
-            </p>
+                for example ava@example.com.
+            </span>
             <br><br>
 
             <label for="level">Experience</label><br>
@@ -51,7 +51,7 @@
             <input type="file" id="photo" name="photo" 
             accept="image/*"><br><br>
             <label for="text">Why do you want to join?</label><br>
-            <textarea id="text" name="text" rows="6" cols="50"
+            <textarea id="text" name="text" rows="6" cols="68"
             placeholder="I love ridge walks." required></textarea>
             <br><br>
             <fieldset>
@@ -67,10 +67,10 @@
                 <label for="poster">Poster</label>
             </fieldset>
         </form>
-        <h4>Form completeness (3 of 5)</h4>
+        <h5>Form completeness (3 of 5)</h5>
         <progress value="3" max="5"></progress>
         <br><br>
-        <button type="submit">Send Application</button>
+        <button type="submit" class="submit">Send Application</button>
     </main>
     <footer>
         <p>&copy; 2026 Trailhead Hiking Club 
