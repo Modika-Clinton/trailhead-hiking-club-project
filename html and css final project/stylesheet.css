@@ -8,7 +8,7 @@
     --color-surface: white;
     --color-surface-variant: orange;
 }
-/*General stylings for all pages*/
+/*General stylings for all five (5) pages*/
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -42,9 +42,17 @@ nav a {
 }
 nav {
     color: var(--text-color);
-    background: 2px solid transparent;
+    background: 1px solid var(--color-surface);
     border-radius: 30px;
     padding: 5px;
+}
+nav a:hover {
+    border: 1px solid var(--color-surface);
+    border-radius: 30px;
+    padding: 8px;
+    background: var(--bg-color);
+    color: var(--color-surface);
+    transition: 0.1s;
 }
 /* Specific stylings for the home page */
 
