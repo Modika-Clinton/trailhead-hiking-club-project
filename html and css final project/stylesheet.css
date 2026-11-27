@@ -424,3 +424,35 @@ progress {
     background: var(--color-surface-variant);
     color: var(--color-surface);
 }
+/* Mobile view first */
+@media screen and (max-width: 576px) {
+    nav {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .hero {
+        text-wrap-mode: wrap;
+    }
+    .hike-cards, .testimonial-cards {
+        flex-direction: column;
+    }
+    aside {
+        margin-top: 0;
+    }
+    .membership {
+        flex-direction: column;
+    }
+    table {
+        width: auto;
+    }
+    .gallery {
+        flex-direction: column;
+    }
+    .property-3 {
+        flex-direction: column;
+    }
+    textarea {
+        width: 200px;
+        height: 300px;
+    }
+}
